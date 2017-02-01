@@ -33,7 +33,7 @@ $_defaults['ill_ext'] = 'exe, asp, php, php3, bat, cgi, pl, com, vbs, reg, pcd, 
 $_defaults['cache_dir'] = '';
 
 $_defaults['theme_categories'] = 'FALSE';
-$_defaults['content_dir'] = realpath('../').DIRECTORY_SEPARATOR.'temp';
+$_defaults['content_dir'] = '/var/temp';
 
 require('include/classes/sqlutility.php');
 

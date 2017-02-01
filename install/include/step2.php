@@ -104,8 +104,8 @@ if (isset($errors)) {
 	<table width="65%" class="tableborder" cellspacing="0" cellpadding="1" border="0" align="center">
 	<tr>
 		<td class="row1"><div class="required" title="Required Field">*</div><b><label for="db">Database Hostname:</label></b><br />
-			Hostname of the database server. Default: <kbd>localhost</kbd></td>
-		<td class="row1" valign="middle"><input type="text" name="db_host" id="db" value="<?php if (!empty($_POST['db_host'])) { echo stripslashes(htmlspecialchars($_POST['db_host'])); } else { echo 'localhost'; } ?>" class="formfield" /></td>
+			Hostname of the database server. Default: <kbd>mysql</kbd></td>
+		<td class="row1" valign="middle"><input type="text" name="db_host" id="db" value="<?php if (!empty($_POST['db_host'])) { echo stripslashes(htmlspecialchars($_POST['db_host'])); } else { echo 'mysql'; } ?>" class="formfield" /></td>
 	</tr>
 	<tr>
 		<td class="row1"><div class="required" title="Required Field">*</div><b><label for="port">Database Port:</label></b><br />
@@ -115,12 +115,12 @@ if (isset($errors)) {
 	<tr>
 		<td class="row1"><div class="required" title="Required Field">*</div><b><label for="username">Database Username:</label></b><br />
 			The username to the database server.</td>
-		<td class="row1"><input type="text" name="db_login" id="username" value="<?php echo stripslashes(htmlspecialchars($_POST['db_login'])); ?>" class="formfield" /></td>
+		<td class="row1"><input type="text" name="db_login" id="username" value="<?php if (!empty($_POST['db_login'])) { echo stripslashes(htmlspecialchars($_POST['db_login'])); } else { echo 'root'; } ?>" class="formfield" /></td>
 	</tr>
 	<tr>
 		<td class="row1"><div class="required" title="Required Field">*</div><b><label for="pass">Database Password:</label></b><br />
 			The password to the database server.</td>
-		<td class="row1"><input type="text" name="db_password" id="pass" value="<?php echo stripslashes(htmlspecialchars($_POST['db_password'])); ?>" class="formfield" /></td>
+		<td class="row1"><input type="text" name="db_password" id="pass" value="<?php if (!empty($_POST['db_password'])) { echo stripslashes(htmlspecialchars($_POST['db_password'])); } else { echo 'pw'; } ?>" class="formfield" /></td>
 	</tr>
 	<tr>
 		<td class="row1"><div class="required" title="Required Field">*</div><b><label for="name">Database Name:</label></b><br />
