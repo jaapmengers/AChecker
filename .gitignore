@@ -13,6 +13,3 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
-
-# Local config AChecker
-include/config.inc.php
