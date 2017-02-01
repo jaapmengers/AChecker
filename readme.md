@@ -19,6 +19,7 @@ It's entirely possible some other features don't work, so open an issue if that'
 
 Original readme below.
 
+```
 ///////////
 // AChecker Readme
 
@@ -47,3 +48,4 @@ Then follow the instructions above.
 
 For more about using AChecker, see the instructional videos on YouTube.
 http://www.youtube.com/watch?v=jtNyF7KuOk8
+```
